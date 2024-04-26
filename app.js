@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 5000
+const PORT = process.env.PORT || 4000;
 const {mongoURl} = require("./utils/Keys.js");
 const multer = require("multer");
 const cors = require("cors");
